@@ -80,7 +80,7 @@ public class StartEnrollmentSystem extends javax.swing.JFrame {
         getContentPane().add(proceedInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 500, 440, 30));
 
         imageBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/heaven.jpg"))); // NOI18N
-        imageBackground.setText("jLabel1");
+        imageBackground.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 18, 83), 10, true));
         getContentPane().add(imageBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 550));
 
         pack();
