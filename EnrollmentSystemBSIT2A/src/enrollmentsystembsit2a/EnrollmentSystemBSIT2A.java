@@ -1,5 +1,5 @@
 package enrollmentsystembsit2a;
-import java.awt.Color;
+import java.awt.*;
 import javax.swing.*;
 import javax.swing.border.Border;
 
@@ -9,7 +9,12 @@ public class EnrollmentSystemBSIT2A {
         
         //Images
         ImageIcon logo = new ImageIcon("D:\\Programming\\git\\enrollment-system\\EnrollmentSystemBSIT2A\\src\\assets\\circle_crop_background.png");
+        ImageIcon startBackground = new ImageIcon("D:\\Programming\\git\\enrollment-system\\EnrollmentSystemBSIT2A\\src\\assets\\heaven.jpg");
         Icon logoApp = new ImageIcon("src/assets/enrollment_system_transparent_logo_circle.png");
+        
+        Image img = startBackground.getImage();
+        Image temp = img.getScaledInstance(500,600,Image.SCALE_SMOOTH);
+        startBackground = new ImageIcon(temp);
         
         //Borders
         Border border = BorderFactory.createLineBorder(new Color(0x413861), 10);
@@ -29,6 +34,10 @@ public class EnrollmentSystemBSIT2A {
         label.setVerticalTextPosition(JLabel.BOTTOM);
         label.setHorizontalTextPosition(JLabel.CENTER);
         
+        JLabel back=new JLabel(startBackground);
+        back.setLayout(null);
+        back.setBounds(0,0,500,600);
+        
         label.setIcon(logoApp);
         label.setText("St. Anne's Catholic School Enrollment System");
         
@@ -37,6 +46,7 @@ public class EnrollmentSystemBSIT2A {
         startPanel.add(label);
         startPanel.setBorder(border);
         startPanel.setBackground(new Color(200, 200, 200));
+        
         
         //Displaying GUI to Application
         layout.setVisible(true);
