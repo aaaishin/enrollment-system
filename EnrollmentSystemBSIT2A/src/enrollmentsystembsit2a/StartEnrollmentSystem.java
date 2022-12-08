@@ -11,7 +11,7 @@ public class StartEnrollmentSystem extends javax.swing.JFrame {
         initComponents();
     }
     
-    public class JPanelWithBackground extends JPanel {
+     public class JPanelWithBackground extends JPanel {
 
         private Image backgroundImage;
 
@@ -26,7 +26,7 @@ public class StartEnrollmentSystem extends javax.swing.JFrame {
           g.drawImage(backgroundImage, 0, 0, this);
         }
     }
-
+    
     ImageIcon logo = new ImageIcon("D:\\Programming\\git\\enrollment-system\\EnrollmentSystemBSIT2A\\src\\assets\\circle_crop_background.png");
     
     @SuppressWarnings("unchecked")
@@ -42,8 +42,7 @@ public class StartEnrollmentSystem extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("St. Anne's Catholic School Enrollment System");
         setBackground(new java.awt.Color(200, 200, 200));
-        setIconImage(logo.getImage()
-        );
+        setIconImage(logo.getImage());
         setResizable(false);
         setSize(new java.awt.Dimension(1000, 550));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -81,13 +80,19 @@ public class StartEnrollmentSystem extends javax.swing.JFrame {
 
         imageBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/heaven.jpg"))); // NOI18N
         imageBackground.setText("jLabel1");
+        imageBackground.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 18, 83), 10, true));
         getContentPane().add(imageBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 550));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void proceedInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_proceedInfoActionPerformed
-        // TODO add your handling code here:
+
+        Registration reg = new Registration();
+        reg.show();
+        
+        dispose();
+        
     }//GEN-LAST:event_proceedInfoActionPerformed
 
     
