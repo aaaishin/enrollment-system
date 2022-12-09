@@ -64,7 +64,7 @@ public class StartEnrollmentSystem extends javax.swing.JFrame {
         getContentPane().add(welcomeText, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 400, 350, 90));
 
         proceedInfo.setBackground(new java.awt.Color(95, 157, 247));
-        proceedInfo.setFont(new java.awt.Font("Verdana Pro Semibold", 1, 12)); // NOI18N
+        proceedInfo.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         proceedInfo.setForeground(new java.awt.Color(0, 18, 83));
         proceedInfo.setText("Proceed");
         proceedInfo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -88,8 +88,8 @@ public class StartEnrollmentSystem extends javax.swing.JFrame {
 
     private void proceedInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_proceedInfoActionPerformed
 
-        Registration reg = new Registration();
-        reg.show();
+        Login login = new Login();
+        login.show();
         
         dispose();
         

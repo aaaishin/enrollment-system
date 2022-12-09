@@ -18,15 +18,18 @@ public class GradeLevel extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         gradeLevelLogo = new javax.swing.JLabel();
-        nextRegistration = new javax.swing.JButton();
+        nextInformation = new javax.swing.JButton();
         gradeLevel = new javax.swing.JComboBox<>();
-        gradeLevelBG = new javax.swing.JLabel();
+        imageBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("St. Anne's Catholic School Enrollment System");
         setBackground(new java.awt.Color(0, 0, 51));
         setIconImage(logo.getImage());
-        setPreferredSize(new java.awt.Dimension(1000, 550));
+        setMaximumSize(new java.awt.Dimension(1015, 586));
+        setMinimumSize(new java.awt.Dimension(1015, 586));
+        setPreferredSize(new java.awt.Dimension(1015, 586));
+        setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
@@ -43,17 +46,18 @@ public class GradeLevel extends javax.swing.JFrame {
         gradeLevelLogo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         getContentPane().add(gradeLevelLogo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 400, 390));
 
-        nextRegistration.setBackground(new java.awt.Color(0, 18, 83));
-        nextRegistration.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        nextRegistration.setForeground(new java.awt.Color(255, 255, 255));
-        nextRegistration.setText("NEXT");
-        nextRegistration.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        nextRegistration.addActionListener(new java.awt.event.ActionListener() {
+        nextInformation.setBackground(new java.awt.Color(0, 18, 83));
+        nextInformation.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        nextInformation.setForeground(new java.awt.Color(255, 255, 255));
+        nextInformation.setText("NEXT");
+        nextInformation.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        nextInformation.setFocusable(false);
+        nextInformation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nextRegistrationActionPerformed(evt);
+                nextInformationActionPerformed(evt);
             }
         });
-        getContentPane().add(nextRegistration, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 300, 200, 40));
+        getContentPane().add(nextInformation, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 300, 200, 40));
 
         gradeLevel.setBackground(new java.awt.Color(255, 255, 255));
         gradeLevel.setEditable(true);
@@ -62,20 +66,25 @@ public class GradeLevel extends javax.swing.JFrame {
         gradeLevel.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "GRADE 7", "GRADE 8", "GRADE 9", "GRADE 10" }));
         gradeLevel.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         gradeLevel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        gradeLevel.setFocusable(false);
         getContentPane().add(gradeLevel, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 250, 200, 40));
 
-        gradeLevelBG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/heaven.jpg"))); // NOI18N
-        gradeLevelBG.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 18, 83), 10, true));
-        getContentPane().add(gradeLevelBG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 980, 510));
+        imageBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/heaven.jpg"))); // NOI18N
+        imageBackground.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 18, 83), 10, true));
+        imageBackground.setFocusable(false);
+        imageBackground.setMaximumSize(new java.awt.Dimension(1020, 570));
+        imageBackground.setMinimumSize(new java.awt.Dimension(1020, 570));
+        imageBackground.setPreferredSize(new java.awt.Dimension(1020, 570));
+        getContentPane().add(imageBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 550));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void nextRegistrationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextRegistrationActionPerformed
+    private void nextInformationActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextInformationActionPerformed
         PersonalInformation perInfo = new PersonalInformation();
         perInfo.show();
 
-        dispose();    }//GEN-LAST:event_nextRegistrationActionPerformed
+        dispose();    }//GEN-LAST:event_nextInformationActionPerformed
 
     /**
      * @param args the command line arguments
@@ -107,10 +116,10 @@ public class GradeLevel extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> gradeLevel;
-    private javax.swing.JLabel gradeLevelBG;
     private javax.swing.JLabel gradeLevelLogo;
+    private javax.swing.JLabel imageBackground;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JButton nextRegistration;
+    private javax.swing.JButton nextInformation;
     // End of variables declaration//GEN-END:variables
 }

@@ -188,14 +188,6 @@ public class Registration extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_loginButtonActionPerformed
 
-        private void proceedInfoActionPerformed(java.awt.event.ActionEvent evt) {                                            
-
-        Login login = new Login();
-        login.show();
-        
-        dispose();
-        
-    }  
     
     public static void main(String args[]) {
         try {

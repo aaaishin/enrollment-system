@@ -24,11 +24,14 @@ public class Subject extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
+        subjectInfoEnrollment = new javax.swing.JLabel();
+        subjectEnrollBG = new javax.swing.JLabel();
+        subjectTitleBG = new javax.swing.JPanel();
+        subjectsTitle = new javax.swing.JLabel();
+        subjectTable = new javax.swing.JLabel();
+        prevParentInfo = new javax.swing.JButton();
+        nextTuitionFee = new javax.swing.JButton();
+        subjectBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("St. Anne's Catholic School Enrollment System");
@@ -36,45 +39,94 @@ public class Subject extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setBackground(new java.awt.Color(0, 0, 51));
-        jLabel1.setFont(new java.awt.Font("Arial Black", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 51));
-        jLabel1.setText("ENROLLMENT SYSTEM");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 19, -1, -1));
+        subjectInfoEnrollment.setBackground(new java.awt.Color(0, 18, 83));
+        subjectInfoEnrollment.setFont(new java.awt.Font("Bahnschrift", 1, 48)); // NOI18N
+        subjectInfoEnrollment.setForeground(new java.awt.Color(255, 255, 255));
+        subjectInfoEnrollment.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        subjectInfoEnrollment.setText("ENROLLMENT SYSTEM");
+        getContentPane().add(subjectInfoEnrollment, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(51, 0, 51));
+        subjectEnrollBG.setBackground(new java.awt.Color(0, 18, 83, 150));
+        subjectEnrollBG.setForeground(new java.awt.Color(0, 18, 83));
+        subjectEnrollBG.setOpaque(true);
+        getContentPane().add(subjectEnrollBG, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 570, 60));
 
-        jLabel2.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("SUBJECTS");
+        subjectTitleBG.setBackground(new java.awt.Color(0, 18, 83));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jLabel2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        subjectsTitle.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
+        subjectsTitle.setForeground(new java.awt.Color(255, 255, 255));
+        subjectsTitle.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        subjectsTitle.setText("SUBJECTS");
+
+        javax.swing.GroupLayout subjectTitleBGLayout = new javax.swing.GroupLayout(subjectTitleBG);
+        subjectTitleBG.setLayout(subjectTitleBGLayout);
+        subjectTitleBGLayout.setHorizontalGroup(
+            subjectTitleBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, subjectTitleBGLayout.createSequentialGroup()
+                .addContainerGap(429, Short.MAX_VALUE)
+                .addComponent(subjectsTitle)
+                .addGap(422, 422, 422))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel2)
-                .addGap(0, 0, Short.MAX_VALUE))
+        subjectTitleBGLayout.setVerticalGroup(
+            subjectTitleBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(subjectsTitle, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 77, 1000, -1));
+        getContentPane().add(subjectTitleBG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 77, 1000, 40));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/subjects.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 120, 700, 360));
+        subjectTable.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/subjects.png"))); // NOI18N
+        getContentPane().add(subjectTable, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, -1, 340));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/heaven.jpg"))); // NOI18N
-        jLabel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 51), 10));
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 550));
+        prevParentInfo.setBackground(new java.awt.Color(0, 18, 83));
+        prevParentInfo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        prevParentInfo.setForeground(new java.awt.Color(255, 255, 255));
+        prevParentInfo.setText("PREVIOUS");
+        prevParentInfo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        prevParentInfo.setFocusable(false);
+        prevParentInfo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                prevParentInfoActionPerformed(evt);
+            }
+        });
+        getContentPane().add(prevParentInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 480, 140, 40));
+
+        nextTuitionFee.setBackground(new java.awt.Color(0, 18, 83));
+        nextTuitionFee.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        nextTuitionFee.setForeground(new java.awt.Color(255, 255, 255));
+        nextTuitionFee.setText("NEXT");
+        nextTuitionFee.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        nextTuitionFee.setFocusable(false);
+        nextTuitionFee.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nextTuitionFeeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(nextTuitionFee, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 480, 140, 40));
+
+        subjectBackground.setForeground(new java.awt.Color(0, 18, 83));
+        subjectBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/heaven.jpg"))); // NOI18N
+        subjectBackground.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 18, 83), 10));
+        getContentPane().add(subjectBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 550));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void prevParentInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prevParentInfoActionPerformed
+
+        ParentInformation parentInfo = new ParentInformation();
+        parentInfo.show();
+
+        dispose();
+    }//GEN-LAST:event_prevParentInfoActionPerformed
+
+    private void nextTuitionFeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextTuitionFeeActionPerformed
+        
+        TuitionFee tuitionFee = new TuitionFee();
+        tuitionFee.show();
+
+        dispose();
+        
+    }//GEN-LAST:event_nextTuitionFeeActionPerformed
 
     public static void main(String args[]) {
 
@@ -86,10 +138,13 @@ public class Subject extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel1;
+    private javax.swing.JButton nextTuitionFee;
+    private javax.swing.JButton prevParentInfo;
+    private javax.swing.JLabel subjectBackground;
+    private javax.swing.JLabel subjectEnrollBG;
+    private javax.swing.JLabel subjectInfoEnrollment;
+    private javax.swing.JLabel subjectTable;
+    private javax.swing.JPanel subjectTitleBG;
+    private javax.swing.JLabel subjectsTitle;
     // End of variables declaration//GEN-END:variables
 }

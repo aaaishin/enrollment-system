@@ -15,36 +15,38 @@ import java.util.*;
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
-        jTextField6 = new javax.swing.JTextField();
-        jLabel8 = new javax.swing.JLabel();
-        jTextField7 = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jTextField8 = new javax.swing.JTextField();
-        jLabel11 = new javax.swing.JLabel();
-        jTextField9 = new javax.swing.JTextField();
-        jLabel12 = new javax.swing.JLabel();
-        jTextField10 = new javax.swing.JTextField();
-        jLabel13 = new javax.swing.JLabel();
-        jTextField11 = new javax.swing.JTextField();
-        jTextField12 = new javax.swing.JTextField();
-        jTextField13 = new javax.swing.JTextField();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jTextField14 = new javax.swing.JTextField();
-        jTextField15 = new javax.swing.JTextField();
-        jTextField16 = new javax.swing.JTextField();
-        jTextField17 = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        infoEnrollment = new javax.swing.JLabel();
+        parentEnrollBG = new javax.swing.JLabel();
+        famBG = new javax.swing.JPanel();
+        famBackground = new javax.swing.JLabel();
+        faField = new javax.swing.JTextField();
+        fatherAddress = new javax.swing.JLabel();
+        fcField = new javax.swing.JTextField();
+        fatherContact = new javax.swing.JLabel();
+        motherName = new javax.swing.JLabel();
+        mnField = new javax.swing.JTextField();
+        motherAddress = new javax.swing.JLabel();
+        maField = new javax.swing.JTextField();
+        guardianName = new javax.swing.JLabel();
+        gnField = new javax.swing.JTextField();
+        guardianAddress = new javax.swing.JLabel();
+        gaField = new javax.swing.JTextField();
+        fnField = new javax.swing.JTextField();
+        foField = new javax.swing.JTextField();
+        fatherName = new javax.swing.JLabel();
+        fatherOcc = new javax.swing.JLabel();
+        moField = new javax.swing.JTextField();
+        mcField = new javax.swing.JTextField();
+        goField = new javax.swing.JTextField();
+        gcField = new javax.swing.JTextField();
+        motherOcc = new javax.swing.JLabel();
+        motherContact = new javax.swing.JLabel();
+        guardianOcc = new javax.swing.JLabel();
+        guardianContact = new javax.swing.JLabel();
+        prevPersoInfo = new javax.swing.JButton();
+        nextSub = new javax.swing.JButton();
+        parentEnrollInfoBG = new javax.swing.JLabel();
+        parentSchoolBG = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("St. Anne's Catholic School Enrollment System");
@@ -52,295 +54,347 @@ import java.util.*;
         setIconImage(logo.getImage());
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setBackground(new java.awt.Color(0, 18, 83));
-        jLabel1.setFont(new java.awt.Font("Arial Black", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 18, 83));
-        jLabel1.setText("ENROLLMENT SYSTEM");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, -1, -1));
+        infoEnrollment.setBackground(new java.awt.Color(0, 18, 83));
+        infoEnrollment.setFont(new java.awt.Font("Bahnschrift", 1, 48)); // NOI18N
+        infoEnrollment.setForeground(new java.awt.Color(255, 255, 255));
+        infoEnrollment.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        infoEnrollment.setText("ENROLLMENT SYSTEM");
+        getContentPane().add(infoEnrollment, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(0, 18, 83));
+        parentEnrollBG.setBackground(new java.awt.Color(0, 18, 83, 150));
+        parentEnrollBG.setForeground(new java.awt.Color(0, 18, 83));
+        parentEnrollBG.setOpaque(true);
+        getContentPane().add(parentEnrollBG, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 570, 60));
 
-        jLabel2.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("FAMILY BACKGROUND");
+        famBG.setBackground(new java.awt.Color(0, 18, 83));
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jLabel2)
-                .addContainerGap(664, Short.MAX_VALUE))
+        famBackground.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
+        famBackground.setForeground(new java.awt.Color(255, 255, 255));
+        famBackground.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        famBackground.setText("FAMILY BACKGROUND");
+
+        javax.swing.GroupLayout famBGLayout = new javax.swing.GroupLayout(famBG);
+        famBG.setLayout(famBGLayout);
+        famBGLayout.setHorizontalGroup(
+            famBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, famBGLayout.createSequentialGroup()
+                .addContainerGap(346, Short.MAX_VALUE)
+                .addComponent(famBackground)
+                .addGap(341, 341, 341))
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel2)
-                .addGap(0, 5, Short.MAX_VALUE))
+        famBGLayout.setVerticalGroup(
+            famBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(famBGLayout.createSequentialGroup()
+                .addComponent(famBackground, javax.swing.GroupLayout.PREFERRED_SIZE, 34, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 1000, 40));
+        getContentPane().add(famBG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 1000, 40));
 
-        jTextField6.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        faField.setBackground(new java.awt.Color(255, 255, 255));
+        faField.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        faField.setForeground(new java.awt.Color(0, 18, 83));
+        faField.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        faField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                faFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 690, 30));
+        getContentPane().add(faField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 690, 30));
 
-        jLabel8.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel8.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel8.setText("Address*");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
+        fatherAddress.setBackground(new java.awt.Color(0, 0, 102));
+        fatherAddress.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        fatherAddress.setForeground(new java.awt.Color(255, 255, 255));
+        fatherAddress.setText("Address*");
+        getContentPane().add(fatherAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
 
-        jTextField7.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        fcField.setBackground(new java.awt.Color(255, 255, 255));
+        fcField.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        fcField.setForeground(new java.awt.Color(0, 18, 83));
+        fcField.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        fcField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                fcFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 200, 240, 30));
+        getContentPane().add(fcField, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 200, 240, 30));
 
-        jLabel9.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel9.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel9.setText("Contact Number*");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 180, -1, -1));
+        fatherContact.setBackground(new java.awt.Color(0, 0, 102));
+        fatherContact.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        fatherContact.setForeground(new java.awt.Color(255, 255, 255));
+        fatherContact.setText("Contact Number*");
+        getContentPane().add(fatherContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 180, -1, -1));
 
-        jLabel10.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel10.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel10.setText("Mother's Name*");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
+        motherName.setBackground(new java.awt.Color(0, 0, 102));
+        motherName.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        motherName.setForeground(new java.awt.Color(255, 255, 255));
+        motherName.setText("Mother's Name*");
+        getContentPane().add(motherName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, -1, -1));
 
-        jTextField8.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        mnField.setBackground(new java.awt.Color(255, 255, 255));
+        mnField.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        mnField.setForeground(new java.awt.Color(0, 18, 83));
+        mnField.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mnField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                mnFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 570, 30));
+        getContentPane().add(mnField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 570, 30));
 
-        jLabel11.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel11.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel11.setText("Address*");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, -1, -1));
+        motherAddress.setBackground(new java.awt.Color(0, 0, 102));
+        motherAddress.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        motherAddress.setForeground(new java.awt.Color(255, 255, 255));
+        motherAddress.setText("Address*");
+        getContentPane().add(motherAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, -1, -1));
 
-        jTextField9.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField9.addActionListener(new java.awt.event.ActionListener() {
+        maField.setBackground(new java.awt.Color(255, 255, 255));
+        maField.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        maField.setForeground(new java.awt.Color(0, 18, 83));
+        maField.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        maField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField9ActionPerformed(evt);
+                maFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 690, 30));
+        getContentPane().add(maField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 320, 690, 30));
 
-        jLabel12.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel12.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel12.setText("Guardian's Name*");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, -1));
+        guardianName.setBackground(new java.awt.Color(0, 0, 102));
+        guardianName.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        guardianName.setForeground(new java.awt.Color(255, 255, 255));
+        guardianName.setText("Guardian's Name*");
+        getContentPane().add(guardianName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 360, -1, -1));
 
-        jTextField10.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField10.addActionListener(new java.awt.event.ActionListener() {
+        gnField.setBackground(new java.awt.Color(255, 255, 255));
+        gnField.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        gnField.setForeground(new java.awt.Color(0, 18, 83));
+        gnField.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        gnField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField10ActionPerformed(evt);
+                gnFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 570, 30));
+        getContentPane().add(gnField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, 570, 30));
 
-        jLabel13.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel13.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel13.setText("Address*");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, -1, -1));
+        guardianAddress.setBackground(new java.awt.Color(0, 0, 102));
+        guardianAddress.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        guardianAddress.setForeground(new java.awt.Color(255, 255, 255));
+        guardianAddress.setText("Address*");
+        getContentPane().add(guardianAddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 420, -1, -1));
 
-        jTextField11.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField11.addActionListener(new java.awt.event.ActionListener() {
+        gaField.setBackground(new java.awt.Color(255, 255, 255));
+        gaField.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        gaField.setForeground(new java.awt.Color(0, 18, 83));
+        gaField.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        gaField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField11ActionPerformed(evt);
+                gaFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 690, 30));
+        getContentPane().add(gaField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 690, 30));
 
-        jTextField12.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField12.addActionListener(new java.awt.event.ActionListener() {
+        fnField.setBackground(new java.awt.Color(255, 255, 255));
+        fnField.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        fnField.setForeground(new java.awt.Color(0, 18, 83));
+        fnField.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        fnField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField12ActionPerformed(evt);
+                fnFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 570, 30));
+        getContentPane().add(fnField, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 570, 30));
 
-        jTextField13.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField13.addActionListener(new java.awt.event.ActionListener() {
+        foField.setBackground(new java.awt.Color(255, 255, 255));
+        foField.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        foField.setForeground(new java.awt.Color(0, 18, 83));
+        foField.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        foField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField13ActionPerformed(evt);
+                foFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 140, 340, 30));
+        getContentPane().add(foField, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 140, 340, 30));
 
-        jLabel14.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel14.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel14.setText("Father's Name*");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
+        fatherName.setBackground(new java.awt.Color(0, 0, 102));
+        fatherName.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        fatherName.setForeground(new java.awt.Color(255, 255, 255));
+        fatherName.setText("Father's Name*");
+        getContentPane().add(fatherName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
 
-        jLabel15.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel15.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel15.setText("Occupation*");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 120, -1, -1));
+        fatherOcc.setBackground(new java.awt.Color(0, 0, 102));
+        fatherOcc.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        fatherOcc.setForeground(new java.awt.Color(255, 255, 255));
+        fatherOcc.setText("Occupation*");
+        getContentPane().add(fatherOcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 120, -1, -1));
 
-        jTextField14.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField14.addActionListener(new java.awt.event.ActionListener() {
+        moField.setBackground(new java.awt.Color(255, 255, 255));
+        moField.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        moField.setForeground(new java.awt.Color(0, 18, 83));
+        moField.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        moField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField14ActionPerformed(evt);
+                moFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 280, 340, 30));
+        getContentPane().add(moField, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 260, 340, 30));
 
-        jTextField15.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField15.addActionListener(new java.awt.event.ActionListener() {
+        mcField.setBackground(new java.awt.Color(255, 255, 255));
+        mcField.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        mcField.setForeground(new java.awt.Color(0, 18, 83));
+        mcField.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        mcField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField15ActionPerformed(evt);
+                mcFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 340, 240, 30));
+        getContentPane().add(mcField, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 320, 240, 30));
 
-        jTextField16.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField16.addActionListener(new java.awt.event.ActionListener() {
+        goField.setBackground(new java.awt.Color(255, 255, 255));
+        goField.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        goField.setForeground(new java.awt.Color(0, 18, 83));
+        goField.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        goField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField16ActionPerformed(evt);
+                goFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField16, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 400, 340, 30));
+        getContentPane().add(goField, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 380, 340, 30));
 
-        jTextField17.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField17.addActionListener(new java.awt.event.ActionListener() {
+        gcField.setBackground(new java.awt.Color(255, 255, 255));
+        gcField.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
+        gcField.setForeground(new java.awt.Color(0, 18, 83));
+        gcField.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        gcField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField17ActionPerformed(evt);
+                gcFieldActionPerformed(evt);
             }
         });
-        getContentPane().add(jTextField17, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 460, 240, 30));
+        getContentPane().add(gcField, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 440, 240, 30));
 
-        jLabel16.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel16.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel16.setText("Occupation*");
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 260, -1, -1));
+        motherOcc.setBackground(new java.awt.Color(0, 0, 102));
+        motherOcc.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        motherOcc.setForeground(new java.awt.Color(255, 255, 255));
+        motherOcc.setText("Occupation*");
+        getContentPane().add(motherOcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 240, -1, -1));
 
-        jLabel17.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel17.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel17.setText("Contact Number*");
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 320, -1, -1));
+        motherContact.setBackground(new java.awt.Color(0, 0, 102));
+        motherContact.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        motherContact.setForeground(new java.awt.Color(255, 255, 255));
+        motherContact.setText("Contact Number*");
+        getContentPane().add(motherContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 300, -1, -1));
 
-        jLabel18.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel18.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel18.setText("Occupation*");
-        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 380, -1, -1));
+        guardianOcc.setBackground(new java.awt.Color(0, 0, 102));
+        guardianOcc.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        guardianOcc.setForeground(new java.awt.Color(255, 255, 255));
+        guardianOcc.setText("Occupation*");
+        getContentPane().add(guardianOcc, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 360, -1, -1));
 
-        jLabel19.setBackground(new java.awt.Color(0, 0, 102));
-        jLabel19.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel19.setText("Contact Number*");
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 440, -1, -1));
+        guardianContact.setBackground(new java.awt.Color(0, 0, 102));
+        guardianContact.setFont(new java.awt.Font("Roboto", 0, 14)); // NOI18N
+        guardianContact.setForeground(new java.awt.Color(255, 255, 255));
+        guardianContact.setText("Contact Number*");
+        getContentPane().add(guardianContact, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 420, 120, -1));
 
-        jButton1.setBackground(new java.awt.Color(95, 157, 247));
-        jButton1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 102));
-        jButton1.setText("PREVIOUS");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        prevPersoInfo.setBackground(new java.awt.Color(0, 18, 83));
+        prevPersoInfo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        prevPersoInfo.setForeground(new java.awt.Color(255, 255, 255));
+        prevPersoInfo.setText("PREVIOUS");
+        prevPersoInfo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        prevPersoInfo.setFocusable(false);
+        prevPersoInfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                prevPersoInfoActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 140, 30));
+        getContentPane().add(prevPersoInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 490, 140, 40));
 
-        jButton3.setBackground(new java.awt.Color(95, 157, 247));
-        jButton3.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(0, 0, 102));
-        jButton3.setText("NEXT");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        nextSub.setBackground(new java.awt.Color(0, 18, 83));
+        nextSub.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        nextSub.setForeground(new java.awt.Color(255, 255, 255));
+        nextSub.setText("NEXT");
+        nextSub.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        nextSub.setFocusable(false);
+        nextSub.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                nextSubActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 500, 110, 30));
+        getContentPane().add(nextSub, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 490, 140, 40));
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/background.jpg"))); // NOI18N
-        jLabel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 51), 10));
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 550));
+        parentEnrollInfoBG.setBackground(new java.awt.Color(0, 18, 83, 150));
+        parentEnrollInfoBG.setForeground(new java.awt.Color(0, 18, 83));
+        parentEnrollInfoBG.setOpaque(true);
+        getContentPane().add(parentEnrollInfoBG, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 980, 380));
+
+        parentSchoolBG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/school_background.png"))); // NOI18N
+        parentSchoolBG.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 18, 83), 10));
+        getContentPane().add(parentSchoolBG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 550));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void faFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_faFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_faFieldActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void fcFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fcFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_fcFieldActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+    private void mnFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_mnFieldActionPerformed
 
-    private void jTextField9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField9ActionPerformed
+    private void maFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_maFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField9ActionPerformed
+    }//GEN-LAST:event_maFieldActionPerformed
 
-    private void jTextField10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField10ActionPerformed
+    private void gnFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gnFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField10ActionPerformed
+    }//GEN-LAST:event_gnFieldActionPerformed
 
-    private void jTextField11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField11ActionPerformed
+    private void gaFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gaFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField11ActionPerformed
+    }//GEN-LAST:event_gaFieldActionPerformed
 
-    private void jTextField12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField12ActionPerformed
+    private void fnFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fnFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField12ActionPerformed
+    }//GEN-LAST:event_fnFieldActionPerformed
 
-    private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
+    private void foFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_foFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField13ActionPerformed
+    }//GEN-LAST:event_foFieldActionPerformed
 
-    private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
+    private void moFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_moFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField14ActionPerformed
+    }//GEN-LAST:event_moFieldActionPerformed
 
-    private void jTextField15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField15ActionPerformed
+    private void mcFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mcFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField15ActionPerformed
+    }//GEN-LAST:event_mcFieldActionPerformed
 
-    private void jTextField16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField16ActionPerformed
+    private void goFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField16ActionPerformed
+    }//GEN-LAST:event_goFieldActionPerformed
 
-    private void jTextField17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField17ActionPerformed
+    private void gcFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gcFieldActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField17ActionPerformed
+    }//GEN-LAST:event_gcFieldActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void prevPersoInfoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_prevPersoInfoActionPerformed
 
         PersonalInformation perInfo = new PersonalInformation();
         perInfo.show();
 
         dispose();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_prevPersoInfoActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void nextSubActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextSubActionPerformed
         Subject sub = new Subject();
         sub.show();
 
         dispose();
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_nextSubActionPerformed
 
     public static void main(String args[]) {
       
@@ -369,35 +423,37 @@ import java.util.*;
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JTextField jTextField10;
-    private javax.swing.JTextField jTextField11;
-    private javax.swing.JTextField jTextField12;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
-    private javax.swing.JTextField jTextField15;
-    private javax.swing.JTextField jTextField16;
-    private javax.swing.JTextField jTextField17;
-    private javax.swing.JTextField jTextField6;
-    private javax.swing.JTextField jTextField7;
-    private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextField jTextField9;
+    private javax.swing.JTextField faField;
+    private javax.swing.JPanel famBG;
+    private javax.swing.JLabel famBackground;
+    private javax.swing.JLabel fatherAddress;
+    private javax.swing.JLabel fatherContact;
+    private javax.swing.JLabel fatherName;
+    private javax.swing.JLabel fatherOcc;
+    private javax.swing.JTextField fcField;
+    private javax.swing.JTextField fnField;
+    private javax.swing.JTextField foField;
+    private javax.swing.JTextField gaField;
+    private javax.swing.JTextField gcField;
+    private javax.swing.JTextField gnField;
+    private javax.swing.JTextField goField;
+    private javax.swing.JLabel guardianAddress;
+    private javax.swing.JLabel guardianContact;
+    private javax.swing.JLabel guardianName;
+    private javax.swing.JLabel guardianOcc;
+    private javax.swing.JLabel infoEnrollment;
+    private javax.swing.JTextField maField;
+    private javax.swing.JTextField mcField;
+    private javax.swing.JTextField mnField;
+    private javax.swing.JTextField moField;
+    private javax.swing.JLabel motherAddress;
+    private javax.swing.JLabel motherContact;
+    private javax.swing.JLabel motherName;
+    private javax.swing.JLabel motherOcc;
+    private javax.swing.JButton nextSub;
+    private javax.swing.JLabel parentEnrollBG;
+    private javax.swing.JLabel parentEnrollInfoBG;
+    private javax.swing.JLabel parentSchoolBG;
+    private javax.swing.JButton prevPersoInfo;
     // End of variables declaration//GEN-END:variables
 }

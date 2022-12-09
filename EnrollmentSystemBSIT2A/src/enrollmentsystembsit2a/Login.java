@@ -12,9 +12,7 @@ public class Login extends javax.swing.JFrame {
     ImageIcon logo = new ImageIcon("D:\\Programming\\git\\enrollment-system\\EnrollmentSystemBSIT2A\\src\\assets\\circle_crop_background.png");
     Registration register = new Registration();
     
-    int tries = 1;
-    String loginUserNameResult = "enroll";
-    String loginPassWordResult = "qwerty";
+    int tries = 0;
     
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -117,12 +115,14 @@ public class Login extends javax.swing.JFrame {
         registrationBackground.setOpaque(true);
         getContentPane().add(registrationBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 160, 450, 240));
 
-        loginButton.setBackground(new java.awt.Color(0, 0, 51));
+        loginButton.setBackground(new java.awt.Color(0, 18, 83));
         loginButton.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         loginButton.setForeground(new java.awt.Color(255, 255, 255));
         loginButton.setText("Log In");
         loginButton.setActionCommand("Sign In");
         loginButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        loginButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        loginButton.setFocusable(false);
         loginButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 loginButtonActionPerformed(evt);
@@ -139,42 +139,40 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void loginUserNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginUserNameActionPerformed
-        loginUserName.getText();
+
     }//GEN-LAST:event_loginUserNameActionPerformed
 
     private void loginPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginPasswordActionPerformed
-        loginPassword.getText();
+
     }//GEN-LAST:event_loginPasswordActionPerformed
 
     private void loginButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginButtonActionPerformed
-        /*GradeLevel grade = new GradeLevel();
-        grade.show();
-
-        dispose();*/
+        String userName = loginUserName.getText();
+        String passWord = loginPassword.getText();
         
-        while(tries > 3){
-            if((loginUserNameResult.equals(loginUserName.getText())) && (loginPassWordResult.equals(loginPassword.getText()))){
-                JOptionPane.showMessageDialog(null, "Successfully log in.");
-                GradeLevel grade = new GradeLevel();
-                grade.setVisible(true);
-            }
-            else if(!(loginUserNameResult.equals(loginUserName.getText())) && (loginPassWordResult.equals(loginPassword.getText()))){
-                JOptionPane.showMessageDialog(null, "Invalid Username.", "Login", JOptionPane.ERROR_MESSAGE);
-                tries += 1;
-            }
-            else if((loginUserNameResult.equals(loginUserName.getText())) && !(loginPassWordResult.equals(loginPassword.getText()))){
-                JOptionPane.showMessageDialog(null, "Invalid Password.", "Login", JOptionPane.ERROR_MESSAGE);
-                tries += 1;
-            }
-            else{
-            JOptionPane.showMessageDialog(null, "You inputted wrong username/password, 3 times", "Login", JOptionPane.ERROR_MESSAGE);
+        if(userName.contains("Aishin") && (passWord.contains("justin"))){
+            loginUserName.setText("");
+            loginPassword.setText("");
             
-            System.exit(0);
-            
-            }
+            GradeLevel gradeLevel = new GradeLevel();
+            gradeLevel.show();
+
+            dispose();
             
         }
-
+        else if(!(userName.contains("one") && passWord.contains("one"))){
+            JOptionPane.showMessageDialog(null, "Invalid Login Details.", "St. Anne's Catholic School Log In", JOptionPane.ERROR_MESSAGE);
+            loginUserName.setText(null);
+            loginPassword.setText(null);
+            loginUserName.grabFocus();
+            loginPassword.grabFocus();
+            tries += 1;
+            
+            if(tries == 3){
+                System.exit(0);
+            }
+        }
+        
     }//GEN-LAST:event_loginButtonActionPerformed
 
     private void loginUserNameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loginUserNameKeyTyped
@@ -184,20 +182,9 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_loginUserNameKeyTyped
 
     private void loginPasswordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_loginPasswordKeyTyped
-        loginPassword = new JPasswordField(6);
+
     }//GEN-LAST:event_loginPasswordKeyTyped
 
-        private void proceedInfoActionPerformed(java.awt.event.ActionEvent evt) {                                            
-
-        
-        
-        GradeLevel grade = new GradeLevel();
-        grade.show();
-
-        dispose();
-        
-    }  
-    
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
