@@ -300,6 +300,7 @@ import java.util.*;
         prevPersoInfo.setForeground(new java.awt.Color(255, 255, 255));
         prevPersoInfo.setText("PREVIOUS");
         prevPersoInfo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        prevPersoInfo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         prevPersoInfo.setFocusable(false);
         prevPersoInfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -313,6 +314,7 @@ import java.util.*;
         nextSub.setForeground(new java.awt.Color(255, 255, 255));
         nextSub.setText("NEXT");
         nextSub.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        nextSub.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         nextSub.setFocusable(false);
         nextSub.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

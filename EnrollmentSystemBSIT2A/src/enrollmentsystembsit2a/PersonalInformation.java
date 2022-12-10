@@ -266,6 +266,7 @@ import java.util.*;
         prevGrade.setForeground(new java.awt.Color(255, 255, 255));
         prevGrade.setText("PREVIOUS");
         prevGrade.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        prevGrade.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         prevGrade.setFocusable(false);
         prevGrade.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -279,6 +280,7 @@ import java.util.*;
         nextParent.setForeground(new java.awt.Color(255, 255, 255));
         nextParent.setText("NEXT");
         nextParent.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        nextParent.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         nextParent.setFocusable(false);
         nextParent.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

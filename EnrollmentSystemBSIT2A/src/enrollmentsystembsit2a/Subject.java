@@ -82,6 +82,7 @@ public class Subject extends javax.swing.JFrame {
         prevParentInfo.setForeground(new java.awt.Color(255, 255, 255));
         prevParentInfo.setText("PREVIOUS");
         prevParentInfo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        prevParentInfo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         prevParentInfo.setFocusable(false);
         prevParentInfo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,6 +96,7 @@ public class Subject extends javax.swing.JFrame {
         nextRequirements.setForeground(new java.awt.Color(255, 255, 255));
         nextRequirements.setText("NEXT");
         nextRequirements.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        nextRequirements.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         nextRequirements.setFocusable(false);
         nextRequirements.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

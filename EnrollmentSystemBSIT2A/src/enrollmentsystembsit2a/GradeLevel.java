@@ -51,6 +51,7 @@ public class GradeLevel extends javax.swing.JFrame {
         nextInformation.setForeground(new java.awt.Color(255, 255, 255));
         nextInformation.setText("NEXT");
         nextInformation.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        nextInformation.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         nextInformation.setFocusable(false);
         nextInformation.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

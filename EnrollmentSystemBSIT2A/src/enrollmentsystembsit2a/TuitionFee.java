@@ -145,6 +145,7 @@ public class TuitionFee extends javax.swing.JFrame {
         exitButton.setForeground(new java.awt.Color(255, 255, 255));
         exitButton.setText("Exit");
         exitButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        exitButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         exitButton.setFocusable(false);
         exitButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -158,6 +159,7 @@ public class TuitionFee extends javax.swing.JFrame {
         doneButton.setForeground(new java.awt.Color(255, 255, 255));
         doneButton.setText("Done");
         doneButton.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        doneButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         doneButton.setFocusable(false);
         doneButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
