@@ -30,7 +30,7 @@ public class Subject extends javax.swing.JFrame {
         subjectsTitle = new javax.swing.JLabel();
         subjectTable = new javax.swing.JLabel();
         prevParentInfo = new javax.swing.JButton();
-        nextTuitionFee = new javax.swing.JButton();
+        nextRequirements = new javax.swing.JButton();
         subjectBackground = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -44,12 +44,12 @@ public class Subject extends javax.swing.JFrame {
         subjectInfoEnrollment.setForeground(new java.awt.Color(255, 255, 255));
         subjectInfoEnrollment.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         subjectInfoEnrollment.setText("ENROLLMENT SYSTEM");
-        getContentPane().add(subjectInfoEnrollment, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 30, -1, -1));
+        getContentPane().add(subjectInfoEnrollment, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 30, -1, -1));
 
-        subjectEnrollBG.setBackground(new java.awt.Color(0, 18, 83, 150));
+        subjectEnrollBG.setBackground(new java.awt.Color(0, 18, 83));
         subjectEnrollBG.setForeground(new java.awt.Color(0, 18, 83));
         subjectEnrollBG.setOpaque(true);
-        getContentPane().add(subjectEnrollBG, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 20, 570, 60));
+        getContentPane().add(subjectEnrollBG, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 570, 70));
 
         subjectTitleBG.setBackground(new java.awt.Color(0, 18, 83));
 
@@ -63,13 +63,13 @@ public class Subject extends javax.swing.JFrame {
         subjectTitleBGLayout.setHorizontalGroup(
             subjectTitleBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, subjectTitleBGLayout.createSequentialGroup()
-                .addContainerGap(429, Short.MAX_VALUE)
+                .addContainerGap(439, Short.MAX_VALUE)
                 .addComponent(subjectsTitle)
-                .addGap(422, 422, 422))
+                .addGap(412, 412, 412))
         );
         subjectTitleBGLayout.setVerticalGroup(
             subjectTitleBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(subjectsTitle, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(subjectsTitle, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
         );
 
         getContentPane().add(subjectTitleBG, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 77, 1000, 40));
@@ -90,18 +90,18 @@ public class Subject extends javax.swing.JFrame {
         });
         getContentPane().add(prevParentInfo, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 480, 140, 40));
 
-        nextTuitionFee.setBackground(new java.awt.Color(0, 18, 83));
-        nextTuitionFee.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        nextTuitionFee.setForeground(new java.awt.Color(255, 255, 255));
-        nextTuitionFee.setText("NEXT");
-        nextTuitionFee.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        nextTuitionFee.setFocusable(false);
-        nextTuitionFee.addActionListener(new java.awt.event.ActionListener() {
+        nextRequirements.setBackground(new java.awt.Color(0, 18, 83));
+        nextRequirements.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        nextRequirements.setForeground(new java.awt.Color(255, 255, 255));
+        nextRequirements.setText("NEXT");
+        nextRequirements.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        nextRequirements.setFocusable(false);
+        nextRequirements.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nextTuitionFeeActionPerformed(evt);
+                nextRequirementsActionPerformed(evt);
             }
         });
-        getContentPane().add(nextTuitionFee, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 480, 140, 40));
+        getContentPane().add(nextRequirements, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 480, 140, 40));
 
         subjectBackground.setForeground(new java.awt.Color(0, 18, 83));
         subjectBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/heaven.jpg"))); // NOI18N
@@ -119,14 +119,14 @@ public class Subject extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_prevParentInfoActionPerformed
 
-    private void nextTuitionFeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextTuitionFeeActionPerformed
+    private void nextRequirementsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nextRequirementsActionPerformed
         
-        TuitionFee tuitionFee = new TuitionFee();
-        tuitionFee.show();
+        Requirements req = new Requirements();
+        req.show();
 
         dispose();
         
-    }//GEN-LAST:event_nextTuitionFeeActionPerformed
+    }//GEN-LAST:event_nextRequirementsActionPerformed
 
     public static void main(String args[]) {
 
@@ -138,7 +138,7 @@ public class Subject extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton nextTuitionFee;
+    private javax.swing.JButton nextRequirements;
     private javax.swing.JButton prevParentInfo;
     private javax.swing.JLabel subjectBackground;
     private javax.swing.JLabel subjectEnrollBG;

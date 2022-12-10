@@ -59,12 +59,12 @@ import java.util.*;
         infoEnrollment.setForeground(new java.awt.Color(255, 255, 255));
         infoEnrollment.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         infoEnrollment.setText("ENROLLMENT SYSTEM");
-        getContentPane().add(infoEnrollment, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 20, -1, -1));
+        getContentPane().add(infoEnrollment, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, -1));
 
         parentEnrollBG.setBackground(new java.awt.Color(0, 18, 83, 150));
         parentEnrollBG.setForeground(new java.awt.Color(0, 18, 83));
         parentEnrollBG.setOpaque(true);
-        getContentPane().add(parentEnrollBG, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 570, 60));
+        getContentPane().add(parentEnrollBG, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 570, 60));
 
         famBG.setBackground(new java.awt.Color(0, 18, 83));
 
@@ -78,9 +78,9 @@ import java.util.*;
         famBGLayout.setHorizontalGroup(
             famBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, famBGLayout.createSequentialGroup()
-                .addContainerGap(346, Short.MAX_VALUE)
+                .addContainerGap(357, Short.MAX_VALUE)
                 .addComponent(famBackground)
-                .addGap(341, 341, 341))
+                .addGap(330, 330, 330))
         );
         famBGLayout.setVerticalGroup(
             famBGLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

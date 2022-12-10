@@ -123,7 +123,7 @@
         <Property name="text" type="java.lang.String" value="jLabel1"/>
         <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
           <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-            <LineBorder roundedCorners="true" thickness="10">
+            <LineBorder thickness="10">
               <Color PropertyName="color" blue="53" green="12" red="0" type="rgb"/>
             </LineBorder>
           </Border>

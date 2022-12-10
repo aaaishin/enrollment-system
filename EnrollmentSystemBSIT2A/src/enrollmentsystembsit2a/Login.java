@@ -48,7 +48,7 @@ public class Login extends javax.swing.JFrame {
         loginSchoolNameShadow.setText("SAINT ANNE'S CATHOLIC SCHOOL");
         getContentPane().add(loginSchoolNameShadow, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 70, 790, 90));
 
-        loginSchoolNameBackground.setBackground(new java.awt.Color(0, 18, 83, 150));
+        loginSchoolNameBackground.setBackground(new java.awt.Color(0, 18, 83));
         loginSchoolNameBackground.setForeground(new java.awt.Color(0, 18, 83));
         loginSchoolNameBackground.setOpaque(true);
         getContentPane().add(loginSchoolNameBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 60, 820, 80));
@@ -110,7 +110,7 @@ public class Login extends javax.swing.JFrame {
         });
         getContentPane().add(loginPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 320, 330, 30));
 
-        registrationBackground.setBackground(new java.awt.Color(0, 18, 83, 100));
+        registrationBackground.setBackground(new java.awt.Color(0, 18, 83));
         registrationBackground.setForeground(new java.awt.Color(0, 18, 83));
         registrationBackground.setOpaque(true);
         getContentPane().add(registrationBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 160, 450, 240));
@@ -131,7 +131,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(loginButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 430, 200, 50));
 
         loginSchoolBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/school_background.png"))); // NOI18N
-        loginSchoolBackground.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 18, 83), 10, true));
+        loginSchoolBackground.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 18, 83), 10));
         loginSchoolBackground.setMaximumSize(new java.awt.Dimension(1020, 520));
         getContentPane().add(loginSchoolBackground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 550));
 

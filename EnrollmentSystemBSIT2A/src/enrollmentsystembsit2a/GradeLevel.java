@@ -28,7 +28,7 @@ public class GradeLevel extends javax.swing.JFrame {
         setIconImage(logo.getImage());
         setMaximumSize(new java.awt.Dimension(1015, 586));
         setMinimumSize(new java.awt.Dimension(1015, 586));
-        setPreferredSize(new java.awt.Dimension(1015, 586));
+        setPreferredSize(new java.awt.Dimension(1014, 586));
         setResizable(false);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -70,7 +70,8 @@ public class GradeLevel extends javax.swing.JFrame {
         getContentPane().add(gradeLevel, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 250, 200, 40));
 
         imageBackground.setIcon(new javax.swing.ImageIcon(getClass().getResource("/assets/heaven.jpg"))); // NOI18N
-        imageBackground.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 18, 83), 10, true));
+        imageBackground.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 18, 83), 10));
+        imageBackground.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         imageBackground.setFocusable(false);
         imageBackground.setMaximumSize(new java.awt.Dimension(1020, 570));
         imageBackground.setMinimumSize(new java.awt.Dimension(1020, 570));
