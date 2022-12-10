@@ -65,7 +65,7 @@ public class TuitionFee extends javax.swing.JFrame {
         balTitle1.setFont(new java.awt.Font("Segoe UI", 3, 36)); // NOI18N
         balTitle1.setForeground(new java.awt.Color(255, 255, 255));
         balTitle1.setText("Account Number:");
-        getContentPane().add(balTitle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 300, -1));
+        getContentPane().add(balTitle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 290, 310, -1));
 
         paymentOption.setFont(new java.awt.Font("Segoe UI", 3, 36)); // NOI18N
         paymentOption.setForeground(new java.awt.Color(255, 255, 255));
@@ -101,7 +101,7 @@ public class TuitionFee extends javax.swing.JFrame {
         balTitle.setFont(new java.awt.Font("Segoe UI", 3, 36)); // NOI18N
         balTitle.setForeground(new java.awt.Color(255, 255, 255));
         balTitle.setText("Balance:");
-        getContentPane().add(balTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 290, 160, -1));
+        getContentPane().add(balTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 290, 170, -1));
 
         paymentField.setBackground(new java.awt.Color(255, 255, 255));
         paymentField.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
@@ -123,7 +123,7 @@ public class TuitionFee extends javax.swing.JFrame {
         paymentTitle.setFont(new java.awt.Font("Segoe UI", 3, 36)); // NOI18N
         paymentTitle.setForeground(new java.awt.Color(255, 255, 255));
         paymentTitle.setText("Payment:");
-        getContentPane().add(paymentTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, 160, -1));
+        getContentPane().add(paymentTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 190, 180, -1));
 
         year.setFont(new java.awt.Font("Segoe UI", 3, 20)); // NOI18N
         year.setForeground(new java.awt.Color(255, 255, 255));

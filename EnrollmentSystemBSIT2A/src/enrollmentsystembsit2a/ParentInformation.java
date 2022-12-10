@@ -61,7 +61,7 @@ import java.util.*;
         infoEnrollment.setText("ENROLLMENT SYSTEM");
         getContentPane().add(infoEnrollment, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 20, -1, -1));
 
-        parentEnrollBG.setBackground(new java.awt.Color(0, 18, 83, 150));
+        parentEnrollBG.setBackground(new java.awt.Color(0, 18, 83));
         parentEnrollBG.setForeground(new java.awt.Color(0, 18, 83));
         parentEnrollBG.setOpaque(true);
         getContentPane().add(parentEnrollBG, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 570, 60));
